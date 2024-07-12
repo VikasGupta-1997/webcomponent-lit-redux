@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "strictNullChecks": false,
+    "outDir": "../public/scripts",
+    "moduleResolution": "node",
+    "module": "ES2020",
+    "target": "ES2020",
+    "experimentalDecorators": true,
+    "checkJs": true,
+    "noEmit": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@services/*": ["pages/*"],
+      "@utilities/*": ["utilities/*"],
+      "@redux/*": ["redux/*"],
+      "@pages/*": ["pages/*"],
+      "@polyfills/*": ["polyfills/*"],
+      "@type/*": ["type/*"]
+    }
+  },
+  "exclude": ["node_modules", "service-worker", "public"],
+  "include": ["./src/**/*"],
+  "types": ["lit", "jasmine"]
+}
